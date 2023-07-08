@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record model="estate.property.tag" id="tag_cozy">
+            <field name="name">Cozy</field>
+        </record>
+        <record model="estate.property.tag" id="tag_renovated">
+            <field name="name">Renovated</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_spacious">
+            <field name="name">Spacious</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_furnished">
+            <field name="name">Furnished</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_oceanview">
+            <field name="name">OceanView</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_modern">
+            <field name="name">Modern</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_historic">
+            <field name="name">Historic</field>
+        </record>
+
+        <record model="estate.property.tag" id="tag_petfriendly">
+            <field name="name">PetFriendly</field>
+        </record>
+
+    </data>
+</odoo>
+
+

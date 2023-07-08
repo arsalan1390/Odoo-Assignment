@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_estate_property" model="ir.actions.act_window">
+            <field name="name">Properties</field>
+            <field name="res_model">estate.property</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record model="ir.actions.act_window" id="action_estate_property_tree">
+            <field name="name">Property List</field>
+            <field name="res_model">estate.property</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click the "Create" button to add a new property.
+                </p>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_estate_property_search">
+            <field name="name">Property Search</field>
+            <field name="res_model">estate.property</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_estate_property_search"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_estate_property_type">
+            <field name="name">Property Types</field>
+            <field name="res_model">estate.property.type</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a new property type.
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_estate_property_tag">
+            <field name="name">Property Tags</field>
+            <field name="res_model">estate.property.tag</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_estate" name="Real Estate" sequence="10"/>
+        <menuitem id="menu_advertisement" name="Advertisements" parent="menu_estate" sequence="10"/>
+        <menuitem id="menu_properties" name="Properties" parent="menu_advertisement" sequence="10" action="action_estate_property"/>
+        <menuitem id="menu_settings" name="Settings" parent="menu_estate" sequence="20"/>
+        <menuitem id="menu_property_types" name="Property Types" parent="menu_settings" sequence="10" action="action_estate_property_type"/>
+        <menuitem id="menu_estate_property_tags" name="Property Tags" parent="menu_settings" sequence="40" action="action_estate_property_tag"/>
+
+
+    </data>
+</odoo>
+

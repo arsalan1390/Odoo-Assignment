@@ -1,0 +1,5 @@
+Python3==3.10.6
+Pip3== 22.0.2
+git==2.34.1
+postgresql==14.8
+pycharm==2023.1
